@@ -5,8 +5,13 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+		<%= javascript_include_tag 'application' %>
+		<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	
   </head>
 
   <body class="body">
@@ -34,17 +39,6 @@
            <%= yield %>
         </div
       </div>
-    <script>
-      $(document).ready(function(){
-        setTimeout(function(){
-          $('#flash_notice').fadeOut("slow", function(){
-            $(this).remove();
-          })
-        }, 4500);
-        $('#flash_notice').hide();
-	       $('#flash_notice').fadeIn("slow",function(){
-         });
-      });
-    </script>
+
   </body>
 </html>
