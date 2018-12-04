@@ -156,7 +156,6 @@ function createAssignment(new_assignment_instance_data) {
 			// typically you would separate out this into its own function
 			// like you did with 			Assignment.prototype.postAssignment
 			console.log("response: ", response);
-			debugger;
 		}
 	})
 
